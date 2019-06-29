@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reqres-client/static/css/main.34de6062.chunk.css",
-    "main.js": "/reqres-client/static/js/main.eaca906f.chunk.js",
-    "main.js.map": "/reqres-client/static/js/main.eaca906f.chunk.js.map",
+    "main.js": "/reqres-client/static/js/main.c0f490c1.chunk.js",
+    "main.js.map": "/reqres-client/static/js/main.c0f490c1.chunk.js.map",
     "runtime~main.js": "/reqres-client/static/js/runtime~main.a152d097.js",
     "runtime~main.js.map": "/reqres-client/static/js/runtime~main.a152d097.js.map",
-    "static/js/2.c4546025.chunk.js": "/reqres-client/static/js/2.c4546025.chunk.js",
-    "static/js/2.c4546025.chunk.js.map": "/reqres-client/static/js/2.c4546025.chunk.js.map",
+    "static/js/2.fd8bc027.chunk.js": "/reqres-client/static/js/2.fd8bc027.chunk.js",
+    "static/js/2.fd8bc027.chunk.js.map": "/reqres-client/static/js/2.fd8bc027.chunk.js.map",
     "index.html": "/reqres-client/index.html",
-    "precache-manifest.bb5b048f901e0a5d58031fce592f2c01.js": "/reqres-client/precache-manifest.bb5b048f901e0a5d58031fce592f2c01.js",
+    "precache-manifest.ede68bfcf1a668595b84744a323c7100.js": "/reqres-client/precache-manifest.ede68bfcf1a668595b84744a323c7100.js",
     "service-worker.js": "/reqres-client/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/reqres-client/static/css/main.34de6062.chunk.css.map"
   }
