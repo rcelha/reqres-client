@@ -15,7 +15,7 @@
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
     "redux-saga": "^1.0.3",
-    "reresource": "latest"
+    "reresource": "^1.0.0-rc.6"
   },
   "scripts": {
     "start": "react-scripts start",

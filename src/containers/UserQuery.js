@@ -2,7 +2,7 @@ import React from "react";
 import UserList from "../components/UserList";
 import { users } from "../services";
 import { useEffect } from "react";
-import withQuery from "./QueryHOC";
+import { withQuery } from "reresource";
 
 const UserListContainer = props => {
   const { resource, listResources, ...otherProps } = props;
