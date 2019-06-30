@@ -8740,9 +8740,9 @@ requires-port@^1.0.0:
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
 reresource@^1.0.0-rc.6:
-  version "1.0.0-rc.6"
-  resolved "https://registry.yarnpkg.com/reresource/-/reresource-1.0.0-rc.6.tgz#4499f462d3e2c6670c9bac0d80da2fbd12bf8236"
-  integrity sha512-qyhC2qlTg4i7q+TCSO4zAp5x4FO4a2FK/wygHBwEW+QWym2TRr6DinA4Xlm6nvtNvCTRSVmzNdwbdrsyf1+VbA==
+  version "1.0.0-rc.7"
+  resolved "https://registry.yarnpkg.com/reresource/-/reresource-1.0.0-rc.7.tgz#d84b962557bc122ea165fc0dfa63f47002202831"
+  integrity sha512-nQR+06D8Uo+p7GFg6FiGjfkARR+P4+k6VGI7ibogfafvr7srN/6yS7eliU/vdko48MQTL7vKWoDOolCpKNpbWg==
   dependencies:
     immer "3.1.2"
     lodash "^4.17.11"

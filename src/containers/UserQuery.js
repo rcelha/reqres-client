@@ -1,30 +1,51 @@
 import React from "react";
 import UserList from "../components/UserList";
-import { users } from "../services";
+import { compose } from "redux";
+import { users, colours } from "../services";
 import { useEffect } from "react";
 import { withQuery } from "reresource";
 
 const UserListContainer = props => {
-  const { resource, listResources, ...otherProps } = props;
+  const { users, loadUsers, notUsers, loadNotUsers, ...otherProps } = props;
 
   useEffect(() => {
-    if (resource.initialized) return;
-    listResources({ page: 0 });
-  }, [listResources, resource]);
+    if (users.initialized) return;
+    loadUsers({ page: 0 });
+  }, [users, loadUsers]);
+
+  useEffect(() => {
+    if (notUsers.initialized) return;
+    loadNotUsers({ page: 0 });
+  }, [notUsers, loadNotUsers]);
 
   const onLoadMoreClick = () => {
-    listResources({ page: resource.meta.page + 1 });
+    loadUsers({ page: users.meta.page + 1 });
   };
 
-  if (resource.error) return <div>Error</div>;
-  if (resource.loading) return <div>Loading</div>;
+  if (users.error) return <div>Error</div>;
+  if (users.loading) return <div>Loading</div>;
+
+  console.log(users.data);
+  console.log(notUsers.data);
+
   return (
     <UserList
       {...otherProps}
-      users={resource.data || []}
+      users={users.data || []}
       onLoadMoreClick={onLoadMoreClick}
     />
   );
 };
 
-export default withQuery("users", users.list)(UserListContainer);
+export default compose(
+  withQuery({
+    resourceType: "users",
+    serviceFunction: users.list,
+    name: "users"
+  }),
+  withQuery({
+    resourceType: "colours",
+    serviceFunction: colours.list,
+    name: "notUsers"
+  })
+)(UserListContainer);

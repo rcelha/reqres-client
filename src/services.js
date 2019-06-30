@@ -15,3 +15,13 @@ export const users = {
     return { data, meta };
   }
 };
+
+export const colours = {
+  list: async params => {
+    const resp = await Axios.get("https://reqres.in/api/colours", {
+      params
+    });
+    const { data, ...meta } = resp.data;
+    return { data, meta };
+  }
+};
